@@ -1,0 +1,402 @@
+#preloder {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  background-color: rgb(0, 0, 0);
+  background-image: url("../assets/images/artiwhitelogo.png");
+  background-size: 650px 650px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.loader {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  margin-top: -13px;
+  margin-left: -13px;
+  border-radius: 60px;
+  animation: loader 0.8s linear infinite;
+  -webkit-animation: loader 0.8s linear infinite;
+}
+
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border: 4px solid #ff8400;
+    border-left-color: transparent;
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border: 4px solid #fc8b1b;
+    border-left-color: transparent;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border: 4px solid #fcbb4b;
+    border-left-color: transparent;
+  }
+}
+
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    border: 4px solid #f44336;
+    border-left-color: transparent;
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+    border: 4px solid #b76c3a;
+    border-left-color: transparent;
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    border: 4px solid #f44336;
+    border-left-color: transparent;
+  }
+}
+
+.section3 {
+  img {
+    border-radius: 10%;
+
+  }
+}
+
+
+#sec3txtcolr {
+  font-weight: 250;
+  font-family: "Amaranth", sans-serif;
+  color: #009ec1;
+
+}
+
+#sec3p {
+  font-weight: 400;
+}
+
+#sce3btn {
+  background-color: #f79800;
+  color: aliceblue;
+}
+
+.section4 {
+  img {
+    border-radius: 10%;
+
+  }
+}
+
+
+#sec4txtcolr {
+  font-weight: 250;
+  font-family: "Amaranth", sans-serif;
+  color: #0a5a36;
+
+}
+
+#sec4p {
+  font-weight: 400;
+}
+
+#sce4btn {
+  background-color: #009ec1;
+  color: aliceblue;
+}
+
+.sec5 {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+
+}
+
+.sec5result {
+  display: inline-block;
+  position: relative;
+
+
+}
+
+.sec5result h2 {
+  float: left;
+  color: #9BEC00;
+  font-size: 60px;
+  margin-right: 20px;
+}
+
+.sec5result p {
+  float: left;
+  padding-top: 10px;
+  line-height: 1.4;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.containersec5 {
+  padding-left: 25%;
+  padding-right: 25px;
+  background-color: #009ec1;
+}
+
+/*CARD for team  */
+.sec6 {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+#sec6team {
+  color: #009ec1;
+  display: flex;
+  align-self: center;
+  margin-right: 30px;
+}
+
+.containercard {
+  height: 300px;
+  width: 600px;
+  top: 50px;
+  left: calc(50% - 300px);
+  display: flex;
+}
+
+.card {
+  display: flex;
+  height: 280px;
+  width: 200px;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 2rem #1f20203f;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+}
+
+.card:not(:first-child) {
+  margin-left: -50px;
+}
+
+.card:hover {
+  transform: translateY(-20px);
+  transition: 0.4s ease-out;
+}
+
+.card:hover~.card {
+  position: relative;
+  left: 50px;
+  transition: 0.4s ease-out;
+}
+
+.title {
+  color: #009ec1;
+  font-weight: 300;
+  position: absolute;
+  left: 30px;
+  top: 20px;
+  text-align: center;
+}
+
+.bar {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  height: 5px;
+  width: 150px;
+}
+
+.emptybar {
+  background-color: #9BEC00;
+  width: 100%;
+  height: 100%;
+}
+
+.filledbar {
+  position: absolute;
+  top: 0px;
+  z-index: 3;
+  width: 0px;
+  height: 100%;
+  background: linear-gradient(90deg, rgb(8, 138, 190) 0%, rgb(0, 187, 121) 65%, rgb(0, 183, 255) 100%);
+  transition: 0.6s ease-out;
+}
+
+.card:hover .filledbar {
+  width: 120px;
+  transition: 0.4s ease-out;
+}
+
+.circle {
+  position: absolute;
+
+  top: 150px;
+  left: calc(50% - 60px);
+
+}
+
+.circle,
+img {
+
+
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    padding-left: 25px;
+    padding-right: 40px;
+    padding-bottom: 25px;
+
+
+  }
+}
+
+.containersec7 {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.slider {
+  height: 750px;
+  width: 100vw;
+  display: flex;
+  perspective: 1000px;
+  position: relative;
+  align-items: center;
+
+}
+
+.box1 {
+  background: url('../assets/images/carsualimages/5060.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.box2 {
+  background: url('../assets/images/carsualimages/23732.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.box3 {
+  background: url('../assets/images/carsualimages/2148863359.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.box4 {
+  background: url('../assets/images/carsualimages/2148863347.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+.box5 {
+  background: url('../assets/images/carsualimages/129780.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+
+.slider [class*="box"] {
+  overflow: hidden;
+  border-radius: 20px;
+  transition: all 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  position: absolute;
+}
+
+.slider [class*="box"]:nth-child(7),
+.slider [class*="box"]:nth-child(1) {
+  width: 100vh;
+  height: 60vh;
+  transform: scale(0.2) translate(-50%, -50%);
+  top: 10%;
+  z-index: 1;
+}
+
+.slider [class*="box"]:nth-child(2),
+.slider [class*="box"]:nth-child(6) {
+  width: 100vh;
+  height: 60vh;
+  transform: scale(0.4) translate(-50%, -50%);
+  top: 20%;
+  z-index: 2;
+}
+
+.slider [class*="box"]:nth-child(3),
+.slider [class*="box"]:nth-child(5) {
+  width: 100vh;
+  height: 60vh;
+  transform: scale(0.6) translate(-50%, -50%);
+  top: 30%;
+  z-index: 3;
+}
+
+.slider [class*="box"]:nth-child(4) {
+  width: 60vw;
+  height: 60vh;
+  border-color: #c92026;
+  color: #fff;
+  transform: scale(1) translate(-50%, -50%);
+  top: 50%;
+  z-index: 4;
+}
+
+.slider [class*="box"]:nth-child(1) {
+  left: -13%;
+}
+
+.slider [class*="box"]:nth-child(2) {
+  left: -5%;
+}
+
+.slider [class*="box"]:nth-child(3) {
+  left: 10%;
+}
+
+.slider [class*="box"]:nth-child(4) {
+  left: 50%;
+}
+
+.slider [class*="box"]:nth-child(5) {
+  left: 71%;
+}
+
+.slider .firstSlide {
+  -webkit-animation: firstChild 1s;
+  animation: firstChild 1s;
+}
+
+.sec7cont {
+  width: 100%;
+
+
+  display: flex;
+  justify-content: center;
+}
+
+.containersec8 {
+  width: 100%;
+}
+
+.sec8 {
+  display: flex;
+  justify-content: center;
+}
